@@ -5,21 +5,23 @@ namespace App\Http\Controllers;
 use App\Lga;
 use App\State;
 use App\Ward;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 class NigController extends Controller
 {
     /**
      * Show Everything
-     * All data structured by state, LGAs, Wards and Polling Units will be returned. The size of this data is approximately 13MB
+     * All data structured by states => LGAs => Wards => Polling Units will be returned. The size of this data is approximately 12MB
+     * This endpoint is disabled due to large memory usage. However, the JSON data is available via this link:
+     * If you wish to use this endpoint (possibly in a forked version), uncomment line 23 of NigController and delete line 22.
      *
      */
     public function getAll(){
-        $states = State::with('lgas.wards.units')->get();
+        ini_set("memory_limit","16M");
+        $states = [];
+//        $states = State::with('lgas.wards.units')->get();
         return response()->json([
             "success" => true,
-            "message" => "All states with corresponding LGAs",
+            "message" => "All states with corresponding LGAs, Wards and Polling Units",
             "data" => $states
         ]);
     }
@@ -32,7 +34,7 @@ class NigController extends Controller
     public function getStates(){
         return response()->json([
             "success" => true,
-            "message" => "All states with corresponding LGAs",
+            "message" => "All states",
             "data" => State::all()
         ]);
     }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,11 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('v1')->group(function(){
+    Route::get('everything','NigController@getAll');
+    Route::get('states','NigController@getStates');
+    Route::get('states/lgas','NigController@getStatesWithLGAs');
+    Route::get('state/lgas/{state}','NigController@getLGAs');
+    Route::get('lga/wards/{lga}','NigController@getWards');
+    Route::get('ward/units/{ward}','NigController@getUnits');
 });
