@@ -24,16 +24,18 @@ Welcome to the generated API reference.
 This API aims to provide needed structured national data for use by developers and other individuals or organisations.
 For now, data available includes all states, LGAs, Wards and Polling units correctly structured with the hierarchy. Feel free to use or contribute.
 Data is also provided as .sql or JSON
+https://allnigeria-api.herokuapp.com/data/allnigeria.json
+https://allnigeria-api.herokuapp.com/data/allnigeria.sql
 <!-- START_24bb4a5389a5e41bec8e213104cff040 -->
 ## Show Everything
 All data structured by states =&gt; LGAs =&gt; Wards =&gt; Polling Units will be returned. The size of this data is approximately 12MB
-This endpoint is disabled due to large memory usage. However, the JSON data is available via this link:
+This endpoint is disabled due to large memory usage. However, the JSON data is available via the link above
 If you wish to use this endpoint (possibly in a forked version), uncomment lines 26 and 28 of NigController and delete line 22.
 
 > Example request:
 
 ```bash
-curl -X GET "http://localhost/api/v1/everything" \
+curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/everything" \
 -H "Accept: application/json"
 ```
 
@@ -41,7 +43,7 @@ curl -X GET "http://localhost/api/v1/everything" \
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/everything",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/everything",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -78,7 +80,7 @@ All States will be returned
 > Example request:
 
 ```bash
-curl -X GET "http://localhost/api/v1/states" \
+curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/states" \
 -H "Accept: application/json"
 ```
 
@@ -86,7 +88,7 @@ curl -X GET "http://localhost/api/v1/states" \
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/states",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/states",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -272,7 +274,7 @@ All States will be returned with their corresponding LGAs
 > Example request:
 
 ```bash
-curl -X GET "http://localhost/api/v1/states/lgas" \
+curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/states/lgas" \
 -H "Accept: application/json"
 ```
 
@@ -280,7 +282,7 @@ curl -X GET "http://localhost/api/v1/states/lgas" \
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/states/lgas",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/states/lgas",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -4410,7 +4412,7 @@ All LGAs belonging to the specified State will be returned. Pass state id.
 > Example request:
 
 ```bash
-curl -X GET "http://localhost/api/v1/state/lgas/{state}" \
+curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/state/lgas/{state}" \
 -H "Accept: application/json"
 ```
 
@@ -4418,7 +4420,7 @@ curl -X GET "http://localhost/api/v1/state/lgas/{state}" \
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/state/lgas/{state}",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/state/lgas/{state}",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -4541,7 +4543,7 @@ All Wards belonging to the specified LGA will be returned. Pass LGA id.
 > Example request:
 
 ```bash
-curl -X GET "http://localhost/api/v1/lga/wards/{lga}" \
+curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/lga/wards/{lga}" \
 -H "Accept: application/json"
 ```
 
@@ -4549,7 +4551,7 @@ curl -X GET "http://localhost/api/v1/lga/wards/{lga}" \
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/lga/wards/{lga}",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/lga/wards/{lga}",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -4647,7 +4649,7 @@ All Polling Units belonging to the specified Ward will be returned. Pass Ward id
 > Example request:
 
 ```bash
-curl -X GET "http://localhost/api/v1/ward/units/{ward}" \
+curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/ward/units/{ward}" \
 -H "Accept: application/json"
 ```
 
@@ -4655,7 +4657,7 @@ curl -X GET "http://localhost/api/v1/ward/units/{ward}" \
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/ward/units/{ward}",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/ward/units/{ward}",
     "method": "GET",
     "headers": {
         "accept": "application/json"

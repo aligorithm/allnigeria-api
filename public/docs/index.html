@@ -51,21 +51,23 @@
 <h1>API</h1>
 <p>This API aims to provide needed structured national data for use by developers and other individuals or organisations.
 For now, data available includes all states, LGAs, Wards and Polling units correctly structured with the hierarchy. Feel free to use or contribute.
-Data is also provided as .sql or JSON</p>
+Data is also provided as .sql or JSON
+<a href="https://allnigeria-api.herokuapp.com/data/allnigeria.json">https://allnigeria-api.herokuapp.com/data/allnigeria.json</a>
+<a href="https://allnigeria-api.herokuapp.com/data/allnigeria.sql">https://allnigeria-api.herokuapp.com/data/allnigeria.sql</a></p>
 <!-- START_24bb4a5389a5e41bec8e213104cff040 -->
 <h2>Show Everything</h2>
 <p>All data structured by states =&gt; LGAs =&gt; Wards =&gt; Polling Units will be returned. The size of this data is approximately 12MB
-This endpoint is disabled due to large memory usage. However, the JSON data is available via this link:
+This endpoint is disabled due to large memory usage. However, the JSON data is available via the link above
 If you wish to use this endpoint (possibly in a forked version), uncomment lines 26 and 28 of NigController and delete line 22.</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET "http://localhost/api/v1/everything" \
+<pre><code class="language-bash">curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/everything" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/everything",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/everything",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -93,12 +95,12 @@ $.ajax(settings).done(function (response) {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET "http://localhost/api/v1/states" \
+<pre><code class="language-bash">curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/states" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/states",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/states",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -275,12 +277,12 @@ $.ajax(settings).done(function (response) {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET "http://localhost/api/v1/states/lgas" \
+<pre><code class="language-bash">curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/states/lgas" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/states/lgas",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/states/lgas",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -4401,12 +4403,12 @@ $.ajax(settings).done(function (response) {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET "http://localhost/api/v1/state/lgas/{state}" \
+<pre><code class="language-bash">curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/state/lgas/{state}" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/state/lgas/{state}",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/state/lgas/{state}",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -4520,12 +4522,12 @@ $.ajax(settings).done(function (response) {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET "http://localhost/api/v1/lga/wards/{lga}" \
+<pre><code class="language-bash">curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/lga/wards/{lga}" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/lga/wards/{lga}",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/lga/wards/{lga}",
     "method": "GET",
     "headers": {
         "accept": "application/json"
@@ -4614,12 +4616,12 @@ $.ajax(settings).done(function (response) {
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl -X GET "http://localhost/api/v1/ward/units/{ward}" \
+<pre><code class="language-bash">curl -X GET "https://http://allnigeria-api.herokuapp.com/api/v1/ward/units/{ward}" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost/api/v1/ward/units/{ward}",
+    "url": "https://http://allnigeria-api.herokuapp.com/api/v1/ward/units/{ward}",
     "method": "GET",
     "headers": {
         "accept": "application/json"
