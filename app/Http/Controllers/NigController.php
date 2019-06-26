@@ -6,17 +6,24 @@ use App\Lga;
 use App\State;
 use App\Ward;
 
+/**
+ * @resource API
+ *
+ * This API aims to provide needed structured national data for use by developers and other individuals or organisations.
+ * For now, data available includes all states, LGAs, Wards and Polling units correctly structured with the hierarchy. Feel free to use or contribute.
+ * Data is also provided as .sql or JSON
+ */
 class NigController extends Controller
 {
     /**
      * Show Everything
      * All data structured by states => LGAs => Wards => Polling Units will be returned. The size of this data is approximately 12MB
      * This endpoint is disabled due to large memory usage. However, the JSON data is available via this link:
-     * If you wish to use this endpoint (possibly in a forked version), uncomment line 23 of NigController and delete line 22.
+     * If you wish to use this endpoint (possibly in a forked version), uncomment lines 26 and 28 of NigController and delete line 22.
      *
      */
     public function getAll(){
-        ini_set("memory_limit","16M");
+//        ini_set("memory_limit","16M");
         $states = [];
 //        $states = State::with('lgas.wards.units')->get();
         return response()->json([
