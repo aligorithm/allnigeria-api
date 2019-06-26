@@ -12,7 +12,7 @@ use App\Ward;
  * This API aims to provide needed structured national data for use by developers and other individuals or organisations.
  * For now, data available includes all states, LGAs, Wards and Polling units correctly structured with the hierarchy. Feel free to use or contribute.
  * Data is also provided as .sql or JSON
- * https://allnigeria-api.herokuapp.com/data/allnigeria.json
+ * https://allnigeria-api.herokuapp.com/data/allnigeria.json <br>
  * https://allnigeria-api.herokuapp.com/data/allnigeria.sql
  */
 class NigController extends Controller
