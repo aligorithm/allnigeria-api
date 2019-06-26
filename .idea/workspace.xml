@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e46e9ebd-2712-4220-b3c2-05e5610579f7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/NigController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/NigController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NigController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NigController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NigController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
@@ -77,12 +79,36 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
-              <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-              <folding />
+              <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              <folding>
+                <marker date="1561547733254" expanded="true" signature="202:437" ph="{&quot;php&quot;: &quot;^7.1.3&quot;...}" />
+                <marker date="1561547733254" expanded="true" signature="458:691" ph="{&quot;beyondcode/laravel-dump-server&quot;: &quot;^1.0&quot;...}" />
+                <marker date="1561547733254" expanded="true" signature="707:877" ph="{&quot;optimize-autoloader&quot;: true...}" />
+                <marker date="1561547733254" expanded="true" signature="833:871" ph="{&quot;php&quot;: &quot;7.3.4&quot;...}" />
+                <marker date="1561547733254" expanded="true" signature="892:962" ph="{...}" />
+                <marker date="1561547733254" expanded="true" signature="913:956" ph="{...}" />
+                <marker date="1561547733254" expanded="true" signature="980:1140" ph="{...}" />
+                <marker date="1561547733254" expanded="true" signature="999:1038" ph="{&quot;App\&quot;: &quot;app/&quot;...}" />
+                <marker date="1561547733254" expanded="true" signature="1060:1134" ph="[...]" />
+                <marker date="1561547733254" expanded="true" signature="1162:1230" ph="{...}" />
+                <marker date="1561547733254" expanded="true" signature="1181:1224" ph="{&quot;Tests\&quot;: &quot;tests/&quot;...}" />
+                <marker date="1561547733254" expanded="true" signature="1338:1473" ph="[...]" />
+                <marker date="1561547733254" expanded="true" signature="1512:1602" ph="[...]" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,6 +144,7 @@
         <option value="$PROJECT_DIR$/app/State.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NigController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
       </list>
     </option>
   </component>
@@ -191,6 +218,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="allnigeria-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="allnigeria-api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,15 +384,16 @@
       <workItem from="1561500624091" duration="1000" />
       <workItem from="1561500635131" duration="509000" />
       <workItem from="1561534748376" duration="2284000" />
-      <workItem from="1561539855233" duration="7455000" />
+      <workItem from="1561539855233" duration="8290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10249000" />
+    <option name="totallyTimeSpent" value="11084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25349087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -361,7 +403,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28652322" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28652322" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -502,8 +544,22 @@
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
-          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding />
+          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <marker date="1561547733254" expanded="true" signature="202:437" ph="{&quot;php&quot;: &quot;^7.1.3&quot;...}" />
+            <marker date="1561547733254" expanded="true" signature="458:691" ph="{&quot;beyondcode/laravel-dump-server&quot;: &quot;^1.0&quot;...}" />
+            <marker date="1561547733254" expanded="true" signature="707:877" ph="{&quot;optimize-autoloader&quot;: true...}" />
+            <marker date="1561547733254" expanded="true" signature="833:871" ph="{&quot;php&quot;: &quot;7.3.4&quot;...}" />
+            <marker date="1561547733254" expanded="true" signature="892:962" ph="{...}" />
+            <marker date="1561547733254" expanded="true" signature="913:956" ph="{...}" />
+            <marker date="1561547733254" expanded="true" signature="980:1140" ph="{...}" />
+            <marker date="1561547733254" expanded="true" signature="999:1038" ph="{&quot;App\&quot;: &quot;app/&quot;...}" />
+            <marker date="1561547733254" expanded="true" signature="1060:1134" ph="[...]" />
+            <marker date="1561547733254" expanded="true" signature="1162:1230" ph="{...}" />
+            <marker date="1561547733254" expanded="true" signature="1181:1224" ph="{&quot;Tests\&quot;: &quot;tests/&quot;...}" />
+            <marker date="1561547733254" expanded="true" signature="1338:1473" ph="[...]" />
+            <marker date="1561547733254" expanded="true" signature="1512:1602" ph="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -514,6 +570,21 @@
           <folding>
             <element signature="e#40#52#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/allnigeria.json">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="189">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
