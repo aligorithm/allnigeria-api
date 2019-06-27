@@ -11,6 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->command->info('Seeding database from SQL file...');
+        DB::unprepared(file_get_contents(database_path('seeds/seed.sqlite.sql')));
+        $this->command->info('Database seeded.');
     }
 }

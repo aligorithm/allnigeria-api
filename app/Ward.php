@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ward extends Model
 {
-    protected $hidden = ['created_at','updated_at'];
     protected $guarded = [];
+    public $timestamps = false;
+
     public function units(){
         return $this->hasMany(Unit::class);
     }
