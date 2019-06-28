@@ -18,7 +18,6 @@ class CreateLgasTable extends Migration
             $table->string('name');
             $table->unsignedBigInteger('state_id');
             $table->foreign('state_id')->references('id')->on('states');
-            $table->timestamps();
         });
     }
 

@@ -18,7 +18,6 @@ class CreateWardsTable extends Migration
             $table->string('name');
             $table->unsignedBigInteger('lga_id');
             $table->foreign('lga_id')->references('id')->on('lgas');
-            $table->timestamps();
         });
     }
 

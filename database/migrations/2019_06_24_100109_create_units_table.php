@@ -18,7 +18,6 @@ class CreateUnitsTable extends Migration
             $table->string('name');
             $table->unsignedBigInteger('ward_id');
             $table->foreign('ward_id')->references('id')->on('wards');
-            $table->timestamps();
         });
     }
 

@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Lga;
-use App\State;
-use App\Ward;
+use App\Models\Lga;
+use App\Models\State;
+use App\Models\Ward;
 
 /**
  * @resource API
