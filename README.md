@@ -22,4 +22,4 @@ https://allnigeria-api.herokuapp.com
 You can download the SQL file <a href="https://allnigeria-api.herokuapp.com/data/allnigeria.sql" target="_blank">here</a>
 
 ## Contact Info
-If you have any other enquiries or you just want to link up, <a href="https://twitter.com/_aligorithm" target="_blank"> follow me on twitter </a> or <a href="mailto:aliyisa@outlook.com" target="_blank"> Send me an email </a>
+If you have any other enquiries or you just want to link up, <a href="https://twitter.com/_aligorithm" target="_blank"> follow me on twitter </a>
